@@ -12,7 +12,7 @@ from transformers import pipeline
 def main():
     st.title("Smart Water: Data Labeling with Active Learning and H2O.ai")
     st.markdown("## Step 1: Upload data from Local or S3")
-    h2o.init()
+    h2o.connect()
     data = None
     step_one = False
     @st.cache
